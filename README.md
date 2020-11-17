@@ -63,3 +63,5 @@ The Easy Ensemble Classifier model is the best of all the models! The accuracy l
 ## Summary 
 
 In conclusion, the Easy Ensemble Classifier model is the best at predicting high credit risk. With a 93% accuracy level, it outperforms all of the other models. It is slightly below the 95% standards that most models are held against, but it is definitely more successful at predicting risk. 
+
+** Code based on Columbia University's Data Analytics Bootcamp Module 17
