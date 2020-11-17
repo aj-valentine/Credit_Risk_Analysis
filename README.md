@@ -14,13 +14,13 @@ The tools used in this analysis are: Python with Machine Learning Models in Jupy
 In an oversampling model, sample data points are randomly selected and duplicated to balance the number of points between the larger and smaller classes. In this instance, the smaller class isn't under represented, but evenly balanced with the larger class. 
 The first model - Naive Random Oversampling - does not provide very strong credit risk predictions. Overall, it only has a 63% accuracy score and 2% F1 score for high risk credit scores. It has low recall (sensitivity) and precision values as well, which means it is not accurate or reliable at predicting a high credit risk. 
 
--- insert screen shot
+<img width="512" alt="naive_random_oversampling" src="https://user-images.githubusercontent.com/67871338/99338855-0834b280-2853-11eb-96cf-0f43b55d97b7.PNG">
 
 2. Smote Oversampling 
 
 In the Smote Oversampling model, the logic is similar to the Naive Random Oversampling model, however it puts more value on which data points are oversampled in order to balance out the classes. It takes data points that are closer to the middle, rather than taking any outlier data points. This helps centralize the data samples and avoid any outliers than can skew the data. 
 
--- insert screen shot
+<img width="511" alt="smote_oversampling" src="https://user-images.githubusercontent.com/67871338/99338854-079c1c00-2853-11eb-985b-0d136c3d6e86.PNG">
 
 Unfortunately, using the Smote Oversampling model does not improve the accuracy levels. Overall, it remains at 63% accuracy level and 2% F1 score for high risk credit levels. The recall or sensitivity level did increase from 59% to 62%, meaning that it does slightly improve the number of high credit risks that are accurately predicted. 
 
@@ -28,7 +28,7 @@ Unfortunately, using the Smote Oversampling model does not improve the accuracy 
 
 In the third model, we use the Cluster Centroids Undersampling algorithm to predict credit risks. Undersampling models differ from the Naive Random and Smote Oversampling models because they actually just use real data points in the data set. Instead of increasing the smaller class like above, this model reduces the amount of the points in the larger class to equalize it with the smaller data. 
 
--- insert screen shot 
+<img width="515" alt="cluster_centroids_undersampling" src="https://user-images.githubusercontent.com/67871338/99338853-079c1c00-2853-11eb-8533-4ede4fe3f31b.PNG">
 
 Even though this model only uses real data points in the dataset, the accuracy level significantly decreases from the oversampling methods. The accuracy level for the Cluster Centroids model dropped to 52% and a high risk F1 score of 1%. This is the worst algorithm to predict credit risk. 
 
@@ -36,7 +36,7 @@ Even though this model only uses real data points in the dataset, the accuracy l
 
 The fourth model of our machine learning analysis is the Smoteenn algorithm that combines over and undersampling. It oversamples like the Smote model and eliminates points that are outliers, and it also undersamples as it drops points that are too close to both classes. This model tries to further define boundaries between the two classes. 
 
--- insert screen shot 
+<img width="515" alt="smoteenn_combo_over_under" src="https://user-images.githubusercontent.com/67871338/99338851-079c1c00-2853-11eb-8d03-462c27b4a8c7.PNG">
 
 This model also doesn't significantly improve the accuracy levels. This falls in line with the Naive Random Oversampling and Smote Oversampling levels at 64% accuracy rate. 
 
@@ -44,13 +44,13 @@ This model also doesn't significantly improve the accuracy levels. This falls in
 
 The following two models - Easy Ensemble Classifier and Balanced Random Forest - help to reduce bias. 
 
--- insert screen shot 
+<img width="504" alt="balanced_random_forest" src="https://user-images.githubusercontent.com/67871338/99338857-0834b280-2853-11eb-8d00-16e04f131ce5.PNG">
 
 This model does increase accuracy over the other four. The level jumped to an 82% accuracy level. While this is much better than the previous models, an 82% is still a mediocre level for a machine learning model. Most would argue an 95% or higher would be the standard level for these models. 
 
 6. Easy Ensemble Classifier
 
--- insert screen shot
+<img width="517" alt="easy_ensemble_classifier" src="https://user-images.githubusercontent.com/67871338/99338856-0834b280-2853-11eb-9ca5-0c4ab67b8605.PNG">
 
 The Easy Ensemble Classifier model is the best of all the models! The accuracy level of this algorithm comes in at 93%! Still, not the most accurate model - but significantly better than all other five options we used in our analysis. This model also increased the high risk recall level to 91%, which is much improved. 
 
