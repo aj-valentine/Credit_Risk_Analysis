@@ -1,5 +1,5 @@
 # High Risk Credit Analysis :credit_card:
-## Analyzing Credit Risk using Machine Learning to Predict Good and Bad Loans 
+### Using Machine Learning to Predict Good and Bad Loans 
 
 ## Overview of the Credit Risk Analysis
 
